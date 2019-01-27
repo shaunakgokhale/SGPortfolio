@@ -5,14 +5,46 @@
         <title>Creating an interface for Industrial Smart-Glasses</title>
         <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="detail.css">
+        <!--Following Script is for smooth transition of hyperlinks. Taken from 
+        https://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_eff_animate_smoothscroll-->
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+        $(document).ready(function(){
+
+          $("a").on('click', function(event) {
+            if (this.hash !== "") {
+
+              event.preventDefault();
+        
+
+              var hash = this.hash;
+
+              $('html, body').animate({
+                scrollTop: $(hash).offset().top
+              }, 600, function(){
+
+                window.location.hash = hash;
+              });
+            } 
+          });
+        });
+        </script>
     </head>
     <body>
         <header>
             <img id="hero" src="fullVR.png">
             <h1>Creating an interface for Industrial Smart-Glasses</h1>
         </header>
-
+        <a href="#start-desc"><img id="down" src="arrowDown.png"></a>
         <main>
+            <div class="persNav">
+                <a href="#start-desc">Description</a></br>
+                </br><a href="#empathise">Empathise</a></br>
+                </br> <a href="#prototyping">Prototyping</a></br>
+                </br><a href="#testing">Testing</a></br>
+                </br><a href="#deployment">Deployment</a></br>
+            </div>
             <section id="start-desc">
                 <div class="content-wrap">
                     <div class="col-narrow">
@@ -24,8 +56,40 @@
                     <div class="col-wide">
                         <p>In the June of 2018, I was presented with an opportunity to design product interfaces for an industrial smart-glasses called RealWear. It’s a head mounted display designed to aid Industrial workers during critical steps. I had given the responsibility to design an experience for Quality check & Training procedures. The hardware is controlled by voice recognition. The users have to speak commands in order to interact.</p>
                         <img src="HMT-1Z1-hardhat.png" width="100%"></img>
-                        <h2>Empathise</h2>
-                        <p>I travelled to the factory where the workers use the basic product, without a much designed app. Their primary concerns were a glaring to their eyes and irregular commands which were hard to remember. After getting to know how they use this wearable, I started paper prototyping.</p>
+                        <section id="empathise">
+                            <h2>Empathise</h2>
+                            <p>I travelled to the factory where the workers use the basic product, without a much designed app. Their primary concerns were a glaring to their eyes and irregular commands which were hard to remember. After getting to know how they use this wearable, I started paper prototyping.</p>
+                            <img class="gal-img" src="empathise1.png">
+                            <p class="gal-text">User testing the Quality of Steel roll while wearing the smart glasses</p>
+                            <img class="gal-img" src="empathise2.png">
+                            <p class="gal-text">Basic app for facilitating the empathise research.</p>
+                        </section>
+                        <section id="prototyping">
+                            <h2>Prototyping</h2>
+                            <p>For prototyping I used a combination of methods such as paper, Digital (Sketchapp) & Invision’s craft plugin for interactive elements.The idea was to create common UI elements that can be used across the apps. Following the brief, I created several such elements - Text Input, Heading, Title, Navigation button, common buttons, etc.</p>
+                            <img class="gal-img" src="proto1.jpg">
+                            <p class="gal-text">Home of the App</p>
+                            <img class="gal-img" src="proto2.jpg">
+                            <p class="gal-text">Voice controlled actions along with the highlight question.</p>
+                            <img class="gal-img" src="proto3.jpg">
+                            <p class="gal-text">Creation of a basic UI Element - skewed rectangle. It can be used everywhere.</p>
+                            <img class="gal-img" src="proto4.jpg">
+                            <p class="gal-text">Periodic maintenance screen - with previously used UI elements.</p>
+                        </section>
+                        <section id="testing">
+                            <h2>Testing</h2>
+                            <p>Initially, the product was tested in the company itself for further feedback. Later on, it was also tested in the ground where it is supposed to work. The reactions were gladly positive, and people liked the experience, with only one concern at hand, the buttons being a tad bit small. This was fixed in later deployments!</p>
+                            <img class="gal-img" src="test1.jpg">
+                            <p class="gal-text">Testing the app in the home ground before showing it to the client.</p>
+                            <img class="gal-img" src="test2.png">
+                            <p class="gal-text">Testing the app with the industrial workers in the client's factory.</p>
+                        </section>
+                        <section id="deployment">
+                            <h2>Deployment</h2>
+                            <p>The app had been started to be developed along side the designing for a faster launch. In the month of July, the app got developed and delivered. It is now used by almost every factory worker in SRF Labs. With positive feedback and a growth in the efficiency, it stands as a true testament to wearables and UX.</p>
+                            <img class="gal-img" src="gifOriga.gif">
+                            <p class="gal-text">Loading animation for the app. The logo is of the company that I worked in for creating this app.</p>
+                        </section>
                     </div>
                 </div>
             </section>

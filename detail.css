@@ -19,6 +19,12 @@ header img {
     object-fit: cover;
 }
 
+#down {
+    display: block;
+    margin: 0 auto;
+    width: 2%;
+}
+
 @media (min-width: 800px) {
     .col-wide {
         width: 70%;
@@ -73,5 +79,37 @@ header img {
 
  h2{
      font-family: headingFont, Arial, Helvetica, sans-serif;
-     color: #FFF;
+     color: #6EDA9A;
  }
+
+ .gal-img {
+     width: 100%;
+     border-radius: 10px;
+     margin-top: 15px;
+     margin-bottom: 0;
+ }
+ .gal-text {
+    text-align: center;
+    padding-bottom: 15px;
+ }
+
+ .persNav {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 50px;
+    padding-left: 50px;
+ }
+
+
+
+ a {
+     font-family: lightFont, Arial, Helvetica, sans-serif;
+     color: rgb(199, 199, 199);
+     text-decoration: none;
+ }
+
+ a:hover {
+     font-family: headingFont,Arial, Helvetica, sans-serif;
+     color: white;
+ }
+
