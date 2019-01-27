@@ -35,6 +35,24 @@
         <header>
             <img id="hero" src="fullVR.png">
             <h1>Creating an interface for Industrial Smart-Glasses</h1>
+
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="index.html">Home</a>
+                <a href="#">Work</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </div>
+            <span onclick="openNav()">&#9776; MENU</span>
+            <script>
+            function openNav() {
+                document.getElementById("mySidenav").style.height = "10%";
+            }
+
+            function closeNav() {
+                document.getElementById("mySidenav").style.height = "0";
+            }
+            </script>
         </header>
         <a href="#start-desc"><img id="down" src="arrowDown.png"></a>
         <main>

@@ -14,7 +14,7 @@ body {
 #second {
     width:9000px;
     position:fixed;
-    z-index:-1;
+    z-index:100;
 }
 #second p {
     float:left;
@@ -136,7 +136,7 @@ h1 {
 /* Move Up */
 @-webkit-keyframes moveUp {
     from {margin-top: 220px;}
-    to {margin-top: 170px;}
+    to {margin-top:    170px;}
   }
   
 @keyframes moveUp {
