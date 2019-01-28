@@ -3,6 +3,16 @@ p {
     font-family: regularFont;
 }
 
+main {
+    position: relative;;
+    width: 100%;
+    height: auto;
+    /* margin-left:50%; */
+    top:0;
+    background:#1e1e1e;
+    z-index:1;
+  }
+
 .heroIMG {
 width: 100%; 
     margin: auto;
@@ -62,6 +72,7 @@ header img {
     .col-narrow {
         width: 20%;
         float: right;
+  
     }
 
     .col-nav {
@@ -69,6 +80,7 @@ header img {
         float: left;
         position: -webkit-sticky;
         position: sticky;
+
     }
 
     .col-left {
@@ -141,6 +153,8 @@ header img {
  
     top: 50px;
     padding-left: 50px;
+  z-index: 100;
+
  }
 
 
@@ -198,7 +212,7 @@ header img {
 
 .sidenav .closebtn {
     position: absolute;
-  top: 7px;
+  top: 17px;
   /* left: 25px; */
   font-size: 36px;
   margin-left: auto;
@@ -208,7 +222,7 @@ header img {
 
 .sidenav a {
     width: 20%;
-    margin-top: 10px;
+    margin-top: 20px;
   text-align: center;
  margin-left: 50px;
  display: inline-block;
