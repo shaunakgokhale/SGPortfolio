@@ -4,23 +4,30 @@ body {
     background: #1e1e1e;
 }
 
+a {
+    text-decoration: none;
+}
+a:hover {
+    font-family: headingFont;
+    }
+
 
 /* Structure */
 #first {
     overflow:hidden;
-    height:4150px;
+    height:5200px;
     position:relative;
 }
 #second {
     width:9000px;
     position:fixed;
-    z-index:100;
+    /* z-index:100; */
 }
 #second p {
     float:left;
 }
 
-#test {
+main {
   position:absolute;
   width: 100%;
   height: 1000px;
@@ -109,16 +116,13 @@ h1 {
 .content-wrap {
     width: 70%;
     margin: 0 auto;
-    margin-top: 50px;
+    /* margin-top: 50px; */
 }
-#test h2 {
+main h2 {
     font-family: headingFont, Arial, Helvetica, sans-serif;
     font-size: 40px;
 }
-#test p {
-    font-family: regularFont, Arial, Helvetica, sans-serif;
-    margin-bottom: 75px;
-}
+
 
 /* Animations */
 
@@ -158,14 +162,14 @@ h1 + .post {
     border: 4px solid white;
     margin-left: 30px;
 }
-#test h2 {
+main h2 {
     margin-bottom: 0;
     /* padding-top: 20px; */
     /* color: white; */
     text-decoration: overline;
 
 }
-#test p {
+main p {
     font-size: 18px;
     font-family: mediumFont, Arial, Helvetica, sans-serif;
 }
@@ -188,6 +192,9 @@ h1 + .post {
     margin-top: 25px;
     vertical-align: middle;
     border-radius: 5px;
+    width: 100%;
+    height: 40%;
+    object-fit: cover;
     /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
   }
  #grid {
@@ -200,8 +207,11 @@ h1 + .post {
   #grid h2 {
       padding-top: 50px;
   }
+
+/* footer Styles */
 #contact {
     background: #6EDA9A;
+    padding-top: 10px;
 }
 .contact-info a {
     padding: 10px;
@@ -216,4 +226,63 @@ footer {
 }
 #contact p {
     padding-bottom: 30px;
+}
+
+.work {
+    background: #6EDA9A;
+    padding-bottom: 30px;
+    margin-bottom: 0;
+}
+
+.work h3 {
+    font-family: headingFont, Arial, Helvetica, sans-serif;
+}
+
+.work p {
+    padding-bottom: 0;
+    padding: 0;
+    margin: 0;
+}
+.job-desc {
+    margin-bottom: 40px;
+    font-family: regularFont, Arial, Helvetica, sans-serif;
+}
+
+/* Education
+-------------------------------*/
+.education {
+    background: #fff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.education h3 {
+    font-family: headingFont, Arial, Helvetica, sans-serif;
+}
+
+p + h3 {
+    margin-top:20px;
+}
+
+/* Navigation
+-------------------------------*/
+nav {
+    text-align: center;
+    background: white;
+    position: -webkit-sticky;
+    position: sticky;
+
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+nav a {
+    background: white;
+    display: inline-block;
+    padding: 15px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: headingFont, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #1e1e1e
 }

@@ -1,5 +1,9 @@
+body {
+    background: #ffffff;
+}
+
 p {
-    color: white;
+    color: #1e1e1e;
     font-family: regularFont;
 }
 
@@ -18,7 +22,7 @@ width: 100%;
 .heroIMG::after {
     display: block;
     position: relative;
-    background-image: linear-gradient(to bottom, rgba(30, 30, 30, 0) 0, #1e1e1e 100%);
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, #ffffff 100%);
     margin-top: -200px;
     height: 200px;
     width: 100%;
@@ -83,13 +87,13 @@ header img {
 }
 
 .col-narrow {
-    background-color: white;
+    background-color: #1e1e1e;
     border-radius: 10px;
 }
 .col-narrow p {
     /* padding-bottom: 0; */
     /* font-family: lightFont; */
-    color: #2b2b2b;
+    color: #ffffff;
     padding-left: 15px;
     padding-right: 15px;
 }
@@ -123,7 +127,7 @@ header img {
 
  h2{
      font-family: headingFont, Arial, Helvetica, sans-serif;
-     color: #6EDA9A;
+     color: rgb(86, 177, 121);
  }
 
  .gal-img {
@@ -143,17 +147,19 @@ header img {
     padding-left: 50px;
  }
 
-
+h1 {
+    color: #1e1e1e;
+}
 
  a {
      font-family: lightFont, Arial, Helvetica, sans-serif;
-     color: rgb(199, 199, 199);
+     color: #2b2b2b;
      text-decoration: none;
  }
 
  a:hover {
      font-family: headingFont,Arial, Helvetica, sans-serif;
-     color: white;
+     color: black;
  }
 
 .col-left {
@@ -182,6 +188,10 @@ header img {
 
 }
 
+.col-right p {
+    color: #ffffff;
+}
+
 .sidenav {
     height: 0;
   width: 100%;
@@ -189,7 +199,7 @@ header img {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #2b2b2b;
+  background-color: white;
   overflow-y: hidden;
   transition: 0.5s;
   /* margin-top: 60px; */
